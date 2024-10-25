@@ -32,7 +32,7 @@
 #include <sys/mman.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <zlib.h>
+#include "zlib.h"
 
 #include <cstdio>
 #include <vector>

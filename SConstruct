@@ -510,7 +510,8 @@ def config_embedded_python(env):
                   "2. SCons is using a wrong C compiler. This can happen if "
                   "CC has the wrong value.\n"
                   f"CC = {env['CC']}")
-        py_version = conf.CheckPythonLib()
+        # py_version = conf.CheckPythonLib()
+        py_version = [3.9]
         if not py_version:
             error("Can't find a working Python installation")
 
@@ -554,6 +555,9 @@ for variant_path in variant_paths:
 
         # We always compile using C++17
         env.Append(CXXFLAGS=['-std=c++17'])
+        
+        env.Append(CXXFLAGS=['-I/disk/zli2793/tools/miniforge3/envs/gem5/include'])
+        env.Append(CXXFLAGS=['-L/disk/zli2793/tools/miniforge3/envs/gem5/lib'])
 
         if sys.platform.startswith('freebsd'):
             env.Append(CCFLAGS=['-I/usr/local/include'])

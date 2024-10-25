@@ -37,7 +37,7 @@
 
 #include "base/framebuffer.hh"
 
-#include <zlib.h>
+#include "zlib.h"
 
 #include "base/bitfield.hh"
 

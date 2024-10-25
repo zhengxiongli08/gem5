@@ -42,7 +42,7 @@
 #include <sys/types.h>
 #include <sys/user.h>
 #include <unistd.h>
-#include <zlib.h>
+#include "zlib.h"
 
 #include <cerrno>
 #include <climits>

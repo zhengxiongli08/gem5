@@ -41,7 +41,7 @@
 #include "mem/ruby/system/RubySystem.hh"
 
 #include <fcntl.h>
-#include <zlib.h>
+#include "zlib.h"
 
 #include <cstdio>
 #include <list>

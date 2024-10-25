@@ -43,7 +43,7 @@
 
 #include "python/embedded.hh"
 
-#include <zlib.h>
+#include "zlib.h"
 
 #include <cstdlib>
 #include <iostream>
